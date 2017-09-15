@@ -1,0 +1,809 @@
+/***********************************************************************************************/
+/* START ALBUMS FULL-BACAKGDROUND */
+/***********************************************************************************************/
+.fullAlbums {
+  z-index: 0;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+}
+.fullAlbums .fullAlbumsContent {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.fullAlbums .fullAlbumsContent h1 {
+  font-weight: 700;
+  font-size: 1.9rem;
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  line-height: 2.8rem;
+  text-transform: uppercase;
+  text-align: right;
+}
+.fullAlbums .fullAlbumsContent p {
+  line-height: 2.1rem;
+  font-size: 1.4rem;
+  padding: 4rem 0 2.3rem 0;
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  text-align: right;
+}
+.fullAlbums .fullAlbumsContent .social-icons {
+  text-align: right;
+}
+.fullAlbums .fullAlbumsContent .social-icons .icon-button {
+  background-color: transparent;
+  border-radius: 3rem;
+  cursor: pointer;
+  display: inline-block;
+  height: 3rem;
+  line-height: 3rem;
+  margin: 0 4px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 3rem;
+}
+.fullAlbums .fullAlbumsContent .social-icons .icon-button i {
+  background: none;
+  color: #fff;
+  height: 3rem;
+  left: -1px;
+  line-height: 3rem;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 3rem;
+  z-index: 10;
+}
+.fullAlbums .fullAlbumsContent .social-icons .icon-button i:before {
+  font-size: inherit;
+}
+.fullAlbums .fullAlbumsContent .social-icons .icon-button span {
+  border-radius: 0;
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 0;
+}
+.fullAlbums .fullAlbumsContent .social-icons .icon-button:hover span {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+  margin: -15.8px;
+}
+.fullAlbums .fullAlbumsContent .social-icons .icon-button:hover i {
+  color: #000;
+}
+.fullAlbums .fullAlbumsContent .social-icons a {
+  padding-right: 2rem;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+.fullAlbums .fullAlbumsContent .social-icons a:last-child {
+  padding-right: 0;
+}
+.fullAlbums .fullAlbumsContent .social-icons .detailsSocial {
+  padding-left: 2rem;
+  position: relative;
+  font-size: 1.2rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  top: -1rem;
+}
+.fullAlbums .fullAlbumsContent .social-icons .detailsSocial i {
+  padding-left: 8px;
+}
+.fullAlbums .fullAlbumsContent .social-icons .detailsSocial:hover {
+  color: #000;
+}
+.fullAlbums .fullAlbumsContent .shopIcon span {
+  background-color: #fff;
+}
+@media (max-width: 800px) {
+  .fullAlbums:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .fullAlbums .fullAlbumsContent {
+    float: none;
+  }
+  .fullAlbums .fullAlbumsContent h1,
+  .fullAlbums .fullAlbumsContent p {
+    float: none;
+    text-align: center;
+  }
+  .fullAlbums .fullAlbumsContent p {
+    padding-top: 2.5rem;
+  }
+  .fullAlbums .fullAlbumsContent .social-icons {
+    text-align: center;
+    float: none;
+  }
+}
+/***********************************************************************************************/
+/* END ALBUMS FULL-BACAKGDROUND  */
+/***********************************************************************************************/
+
+/***********************************************************************************************/
+/* START SINGLE ALBUM */
+/***********************************************************************************************/
+.albumSingle{
+	table{
+    	td{
+	      font-size: 1.4rem;
+	      font-weight: 400;
+	      line-height: 3rem;
+	      font-family: @baseFont;
+	      color: #757575;
+	      border-top: 1px solid #cecece;
+    	}
+    	.nameTable, .lengthTable{
+    		font-weight: 700;
+    		font-size: 1.3rem;
+    		color: #525252;
+    		font-family: @mont;
+    		text-transform: uppercase;
+    	}
+    	.tableWidth{
+    		width: 80%;
+    	}
+    	tr{
+	      &:hover{
+	        background-color: rgba(255, 255, 255, 0.5);
+	      }
+    	}
+    	.btnPlay{
+    	  padding-left:2rem; 
+          width: 26px;
+          height: 26px;
+          display: inline-block;
+          position: relative;
+          z-index: 1;
+          color: #000;
+          text-align: center;
+          line-height: 26px;
+          i{
+            font-size: 12px;
+          }
+          &:before {
+                  content: '';
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  left: 1rem;
+                  top: 0;
+                  border-radius: 50%;
+                  background: #202020;
+                  opacity: 0;
+                  z-index: -1;
+                  .scale(0);
+                  .transition;
+               }
+              &:hover {
+                color: #fff;
+                border-color: transparent;
+                &:before {
+                  opacity: 1;
+                  .scale(1);
+                }
+              }           
+    	}
+  	}
+}
+
+.sidebarAlbum{
+	.widget{
+		padding-bottom: 6rem;
+		&:last-child{padding-bottom: 0;}
+		h3{
+			padding-bottom: 3rem;
+		    font-weight: 700;
+		    font-family: @mont;
+		    color: #525252;
+		    font-size: 1.8rem;
+		    text-transform: uppercase;
+		}
+		ul{
+			li{
+			    font-size: 1.3rem;
+			    position: relative;
+			    color: #525252;
+			    line-height: 2.8rem;
+			    font-weight: 700;
+			    font-family: @baseFont;
+			    text-transform: uppercase;
+			    span{
+			        position: absolute;
+				    font-size: 1.3rem;
+				    color: #757575;
+				    line-height: 2.8rem;
+				    font-weight: 400;
+				    text-transform: uppercase;
+				    font-family: @baseFont;
+				    left: 0;
+    				padding-left: 13rem;
+			    }
+			}
+		}
+    section #services li div i{
+        font-size: 1.5rem;
+      }
+	}
+}
+
+.instagram-widget {
+  ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-left: -5px;
+    margin-right: -5px;
+    padding-top: 1rem;
+    li {
+      display: block;
+      float: left;
+      width: 30%;
+      padding: 2px;
+      .transition;
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+}
+@import url(http://fonts.googleapis.com/css?family=Raleway+Dots);
+@import url(http://fonts.googleapis.com/css?family=Advent+Pro:400,200,700);
+// @import url(http://weloveiconfonts.com/api/?family=entypo);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+
+section{
+  #services{
+  	text-align: center;
+  	transform: translatez(0);
+  	li{
+	  	width: 3rem;
+	  	height: 5rem;
+	  	display: inline-block;
+	  	margin: 0 1rem 0 0;
+	 	list-style: none;
+	 	float: left;
+	 	div{
+ 		  i{
+ 		  	  width: 3rem;
+			  height: 3rem;
+			  color: #fff;
+			  border-radius: 50%;
+			  font-size: 2rem;
+			  text-align: center;
+			  line-height: 2.7rem;
+			  transition: all 0.5s ease;
+			  &:hover{
+			  	transform:rotate(360deg);
+			  	border-radius: 10rem;
+			  	background-color: @golden;
+			  }
+ 		  	}
+	 	}
+	  }
+  }
+}
+
+//ENTYP ICONS SINGLE ALBUM
+.fa-apple{
+	&:before{
+		
+	}
+	background-color: #CACACA;
+}
+
+.fa-soundcloud{
+	&:before{
+		
+	}
+	background-color: #CACACA;
+}
+
+.fa-lastfm{
+	&:before{
+		
+	}
+	background-color: #CACACA;
+}
+
+//ENTYPO ICONS SINGLE EVENT
+.fa-facebook{
+	&:before{
+		
+	}
+	background-color: #CACACA;
+}
+
+.fa-twitter{
+	&:before{
+		
+	}
+	background-color: #CACACA;
+}
+
+.fa-instagram{
+	&:before{
+		
+	}
+	background-color: #CACACA;
+}
+
+.fa-youtube{
+	&:before{
+		
+	}
+	background-color:  #CACACA;
+}
+
+.fa-spotify{
+	&:before{
+		
+	}
+	background-color:  #CACACA;
+}
+
+.fa-amazon{
+	&:before{
+		
+	}
+	background-color:  #CACACA;
+}
+/***********************************************************************************************/
+/* END INGLE ALBUM */
+/***********************************************************************************************/
+
+/***********************************************************************************************/
+/* START BOTTOM HOVER */
+/***********************************************************************************************/
+.pagination-previous.disabled,
+.pagination-next.disabled,
+.pagination-previous.disabled:hover,
+.pagination-next.disabled:hover {
+    transition: none;
+    cursor: default;
+    background: none!important
+}
+.pagination-1 small {
+    font-size: 1.3rem;
+    display: block;
+    text-transform: uppercase;
+}
+.pagination-1 small span {
+    font-size: 1.3rem;
+    display: inline-block
+}
+.pagination-1 [class*="icon-"] {
+    height: 3.6rem;
+    font-size: 3.6rem;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.pagination-1 .pagination-previous {
+    text-align: left
+}
+.pagination-1 .pagination-previous [class*="icon-"] {
+    margin-right: 1rem;
+    float: left
+}
+.pagination-1 .pagination-next {
+    text-align: right
+}
+.pagination-1 .pagination-next [class*="icon-"] {
+    margin-left: 1rem;
+    float: right
+}
+.pagination-1 span {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block
+}
+.pagination-1 a.disabled,
+.pagination-1 a.disabled:hover {
+    color: #ddd
+}
+.pagination-1 .return-to-index,
+.pagination-1 .page-list {
+    margin-top: .3rem;
+    margin-bottom: 0;
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: bold
+}
+.pagination-1 .page-list li {
+    padding: 0 .7rem
+}
+.section-block.pagination-2 {
+    padding-top: 0;
+    padding-bottom: 0
+}
+.pagination-2 .column,
+.pagination-2 .column:hover {
+    background-size: cover;
+    background-position: center;
+    -webkit-transform: translate(0, 0)
+}
+body.boxed .pagination-2 {
+    padding-left: 0;
+    padding-right: 0
+}
+.pagination-2 .pagination-previous,
+.pagination-2 .pagination-next {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    display: block;
+    position: relative
+}
+.pagination-2 .pagination-previous {
+    padding-left: 37rem;
+    background: #f9f9f9;
+    text-align: left
+}
+.pagination-2 .pagination-next {
+    padding-right: 37rem;
+    background: #f5f5f5;
+    text-align: right
+}
+
+.pagination-2 [style] a:hover {
+    background: rgba(0, 0, 0, 0.3)
+}
+.pagination-2 small {
+    font-size: 1.3rem;
+    display: block;
+    color:#888;
+    font-family: @mont;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.pagination-2 small span {
+    font-size: 1.3rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: @mont;
+    font-weight: 400;
+    color: #555454!important;
+}
+.pagination-2 [class*="icon-"] {
+    height: 3.6rem;
+    font-size: 3.6rem;
+    display: inline-block
+}
+.pagination-2 .pagination-previous [class*="icon-"] {
+    margin-left: 1rem;
+    float: right
+}
+.pagination-2 .pagination-next [class*="icon-"] {
+    margin-right: 1rem;
+    float: left
+}
+.pagination-2 span {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block
+}
+.pagination-2 a.disabled,
+.pagination-2 a.disabled:hover {
+    color: #ddd
+}
+.pagination-3 ul {
+    margin: 0;
+    text-align: center
+}
+.pagination-3 ul li {
+    display: inline-block
+}
+.pagination-3 ul li a {
+    width: 4rem;
+    height: 4rem;
+    margin: 0;
+    padding: 1rem;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    text-align: center
+}
+.pagination-3 ul li a.current,
+.pagination-3 ul li a:hover {
+    background: #333;
+    color: #fff;
+    border: transparent
+}
+.pagination-3 ul li:first-child {
+    float: left
+}
+.pagination-3 ul li:last-child {
+    float: right
+}
+.pagination-3 a.disabled,
+.pagination-3 a.disabled:hover {
+    color: #ddd;
+    border-color: #ddd
+}
+.pagination-4 {
+    text-align: center
+}
+.pagination-4 .button {
+    width: auto;
+    margin: 0 .5rem;
+    font-size: 1.6rem;
+    font-weight: bold
+}
+.pagination-4 .button.disabled,
+.pagination-4 .button.disabled:hover {
+    color: #ddd;
+    background: 0;
+    border-color: #ddd
+}
+.pagination-4 .button [class*="icon-"]:before {
+    margin: 0
+}
+.pagination-4 .pagination-previous [class*="icon-"],
+.pagination-4 .pagination-next [class*="icon-"] {
+    display: none
+}
+.pagination-5 {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+    border-top: 1px solid #ddd
+}
+.pagination-5 ul {
+    margin: 0;
+    text-align: center
+}
+.pagination-5 ul li {
+    display: inline-block;
+    margin-left: -0.4rem
+}
+.pagination-5 ul li a {
+    width: 6rem;
+    height: 6rem;
+    color: #333;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 6rem;
+    display: block
+}
+.pagination-5 ul li a.current {
+    color: #999
+}
+.pagination-5 ul li a:hover {
+    background: #333;
+    color: #fff;
+    border: transparent
+}
+.pagination-5 ul li:first-child {
+    float: left
+}
+.pagination-5 ul li:last-child {
+    float: right
+}
+.pagination-5 a.disabled,
+.pagination-5 a.disabled:hover {
+    color: #ddd;
+    border-color: #ddd
+}
+.pagination-5 ul li a.pagination-previous,
+.pagination-5 ul li a.pagination-next {
+    width: auto;
+    padding: 0 2rem;
+    font-weight: bold;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd
+}
+.pagination-5 ul li a.pagination-previous {
+    padding-right: 3.5rem
+}
+.pagination-5 ul li a.pagination-next {
+    padding-left: 3.5rem
+}
+.pagination-5 ul li a span {
+    width: auto;
+    float: left
+}
+.pagination-5 ul li a [class*="icon-"] {
+    height: 100%;
+    margin-right: 0;
+    line-height: 6rem;
+    font-size: 3.2rem
+}
+
+.leftHover{
+    padding: 0;
+    a{
+        text-decoration: none;
+        span{
+            text-transform: uppercase;
+            color: #555454;
+        }
+        &:hover{
+          span, small{
+            visibility: hidden;
+          }
+        }
+    }
+}
+.rightHover{
+    padding: 0;
+    a{
+        text-decoration: none;
+        span{
+            text-transform: uppercase;
+            color: #555454;
+        }
+        &:hover{
+          span, small{
+            visibility: hidden;
+          }
+        }
+    }
+}
+
+.bottomSection{
+	padding: 18rem 0;
+	text-align: center;
+	h2{
+		font-weight: 500;
+		color: @golden;
+		font-family: @raleway;
+		font-size: 1.7rem;
+		letter-spacing: 0.2rem;
+		text-transform: uppercase;
+		padding-bottom: 0.8rem;
+	}
+}
+
+.quote{
+	font-weight: 500;
+	font-style: italic;
+	font-size: 1rem;
+	font-family: @raleway;
+	color: #9e9e9e;
+	padding-bottom: 2.7rem;
+}
+
+p{
+	font-weight: 500;
+	font-size: 1.3rem;
+	font-family: @raleway;
+	color: #9e9e9e;
+	a{
+		text-decoration: none;
+		color: @golden;
+	}
+}
+/***********************************************************************************************/
+/* END BOTTOM HOVER */
+/***********************************************************************************************/
+
+/*GRID FILTER*/
+.albumFilter{
+	.categories{
+		padding-left: 4.5rem;
+	}
+	.list-feature{
+		li{
+			margin-bottom: 5.5rem;
+		}
+	}
+}
+/*END GRID FILTER*/
+
+/***********************************************************************************************/
+/* MEDIA QUERY */
+/***********************************************************************************************/
+@media (max-width: 800px){
+	.bottomSection{
+		padding: 10rem 0;
+	}
+	.sidebarAlbum{
+		padding-top: 8rem;
+		text-align: center;
+		.widget{
+			ul{
+				li{
+					position: relative;
+					span{
+						position: relative;
+						padding: 0;
+						left: 1rem;
+					}
+				}
+			}
+		}
+		.instagram-widget{
+			ul{
+				li{
+					width: 33%;
+					&:nth-child(3){padding-right: 0;}
+					&:nth-child(6){padding-right: 0;}
+				}
+			}
+		}
+		section{
+			position: absolute;
+			.translateX(-50%);
+			left: 50%;
+		}
+	}
+	.pagination-2 {
+		.pagination-previous{
+			text-align: center;
+			padding-left: 0;
+		}
+		.pagination-next{
+			text-align: center;
+			padding-right: 0;
+		}
+	}
+  .fullAlbums{
+    background-size: cover;
+    background-attachment: initial;
+  }
+  section #services li{
+    margin-right: 5px;
+  }
+}
+@media(max-width:320px){
+  section #services li{
+    margin-right: 0;
+  }
+}
+/***********************************************************************************************/
+/* END MEDIA QUERY */
+/***********************************************************************************************/

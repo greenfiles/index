@@ -1,0 +1,58 @@
+body{
+  h1, h2, h3, h4, h5, h6, p, ul{
+    margin: 0;
+    padding: 0;
+  }
+
+  ul{
+    list-style: none;
+  }
+}
+
+.sectionTitle{
+  text-align: center;
+  text-transform: uppercase;
+  h2{
+    a{
+      font-family: @mont;
+      font-weight: 400;
+      font-size: 3rem;
+      letter-spacing: 2px;
+      color: #333;
+      text-decoration: none;
+      .transition;
+      &:hover{
+        color: @purple;
+      }
+    }
+    &:hover{
+      color: @purple;
+    }
+  }
+  p{
+    font-family: @baseFont;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #757575;
+    text-transform: initial;
+    a{
+      font-family: @baseFont;
+      font-weight: 400;
+      font-size: 1.8rem;
+      color: @purple;
+      text-transform: initial;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+  span.heading-b3 {
+    display: block;
+    height: 1px;
+    width: 70px;
+    margin: 0 auto;
+    background-color: @purple;
+    position: relative;
+    top: 1.6rem;
+  }
+}

@@ -1,85 +1,663 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- HTML META TAGS -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="author" content="Greenish Games" />
-    <!-- FAVICON -->
-    <link rel="icon" href="assets/img/favicon.png" />
-    <!-- SCRIPTS & PLUGINS -->
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script type="text/javascript" src="js/vendors/jquery.min.js"></script>
-    <script type="text/javascript" src="js/vendors/modernizr.min.js"></script>
-    <script type="text/javascript" src="js/vendors/modetect.min.js"></script>
-    <script type="text/javascript" src="js/vendors/easing.min.js"></script>
-    <!-- TYPEKIT & GOOGLE ANALYTICS -->
-    <script type="text/javascript" src="https://use.typekit.net/nnb3css.js"></script>
-    <script type="text/javascript">
-    try {
-        Typekit.load();
-    } catch (e) {}
-    </script>
-    <!-- TITLE & FAVICON -->
-    <title>Greenish Games </title>
-    <!-- STYLES -->
 
-    <!-- SCRIPTS & PLUGINS -->
-    <script type="text/javascript" src="js/functions.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        var aImages = ["assets/img/splash/landscape.jpg", "assets/img/splash/cloud-1.png", "assets/img/splash/cloud-2.png", "assets/img/splash/cloud-3.png", "assets/img/splash/cross.png", "assets/img/splash/light.png", "assets/img/splash/logo.png", "assets/img/splash/mask.png"];
-        splash.preload(aImages);
-    });
-    </script>
+	<meta charset="UTF-8">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="description" content="Buy Royalty Free Music for your next creative projects. Enjoy simple and affordable music licensing solution.">
+    <meta name="keywords" content=" Greenish royalty free music, online music, music licensing, music, royalty free, stock music, copyright free music, download royalty free music, download royalty free music tracks, download music, purchase music, buy music, buy music track, purchase music track ">
+
+	<title>Greenish - Royalty Free Music</title>
+
+	<link rel="icon" href="assets/img/content/icon.png">
+	<!-- ========== CSS INCLUDES ========== -->
+	<link rel="stylesheet" href="assets/css/master.css">
 </head>
 
 <body>
-    <!-- SCENE -->
-    <div id="splash" class="page">
-        <div id="loader">
-            <div class="progress"></div>
-            <p>Loading...</p>
-        </div>
-        <div id="scene-wrap">
-            <div id="scene">
-                <div class="mask layer"></div>
-                <div class="content">
-                    <div class="title layer">
-                        <h1>Greenish Games</h1>
-                        <p class="status">License The World Best Games <a href="" target="_blank"><strong>License Now</strong></a>
-                        </p>
-                        <p class="dogname"><em>2017 &copy; Copyright</em>
-                        </p>
-                        <div class="socials">
-                            <ul>
-                      
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="light layer" data-depth="0.6"></div>
-                    <div class="clouds">
-                        <div class="cloud-1"></div>
-                        <div class="cloud-2"></div>
-                        <div class="cloud-3"></div>
-                    </div>
-                    <div class="clouds-loop">
-                        <div class="cloud-1"></div>
-                        <div class="cloud-2"></div>
-                        <div class="cloud-3"></div>
-                    </div>
-                    <div class="logo layer" data-depth="1"></div>
-                    <div class="background layer" data-depth="0.5"><img src="assets/img/splash/landscape.jpg" alt="" />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="footer">
-            <p class="copyright">&copy; 2017 - Made With Love - Greenish Games</p>
-        </div>
-    </div>
-    <!-- END SCENE -->
-    <script type="text/javascript" src="js/vendors/parallax.js"></script>
-</body>
 
+	<div class="page-loader">
+		 <div class="vertical-align align-center">
+			  <img src="assets/loader/loader.gif" alt="" class="loader-img">
+		 </div>
+	</div>
+
+	<!-- =============== START PLAYER ================ -->
+	<div class="main-music-player">
+		<a class="hide-player-button">
+			<i class="fa fa-plus"></i>
+			<i class="fa fa-minus"></i>
+		</a>
+		<div id="mesh-main-player" class="jp-jplayer" data-audio-src="assets/audio/flute.mp3" data-title="See right through ft. Fiora" data-artist="Tensnake"></div>
+		
+		<div id="mesh-main-player-content" class="mesh-main-player" role="application" aria-label="media player">
+			<div class="container">
+				<div class="row">
+					<div class="left-player-side">
+						<div class="mesh-prev">
+							<i class="fa fa-step-backward"></i>
+						</div>
+						<div class="mesh-play">
+							<i class="fa fa-play"></i>
+						</div>
+						<div class="mesh-pause">
+							<i class="fa fa-pause"></i>
+						</div>
+						<div class="mesh-next">
+							<i class="fa fa-step-forward"></i>
+						</div>
+						
+					</div>
+					<div class="center-side">
+						<div class="mesh-current-time">
+						</div>
+						<div class="mesh-seek-bar">
+							<div class="mesh-play-bar">
+							</div>
+						</div>
+						<div class="mesh-duration">
+						</div>
+					</div>
+					<div class="right-player-side">
+						
+						<div class="mesh-title">
+						</div>
+						<div class="mesh-artist">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =============== END PLAYER ================ -->
+
+	
+	<!-- =============== START TOP HEADER ================ -->
+	<div class="topHeader" >
+		<div class="header">
+			<div class="rightTopHeader">
+
+				<!-- Open Menu Button -->
+				<a class="open-menu">
+					<!-- Buttons Bars -->
+					<span class="span-1"></span>
+					<span class="span-2"></span>
+					<span class="span-3"></span>
+				</a>
+			</div><!-- end rightTopHeader -->
+		</div><!-- end header -->
+		<!-- Menu Fixed Container -->
+		<div class="menu-fixed-container">
+			<!-- Menu Fixed Centred Container -->
+			<nav>
+				<!-- Menu Fixed Close Button -->
+				<div class="x-filter">
+					<span></span>
+					<span></span>
+				</div>
+				<!-- Menu Fixed Primary List -->
+				<ul>
+		<!-- Menu Fixed Item -->
+<!-- 		<li><a href="https://musics.awwkwards.com" class="footerlinks"> Browse Music Library </a></li>
+		<li><a href="https://musics.awwkwards.com/p/why-buy-with-us.html" class="footerlinks"> Why Buy With Us? </a></li>
+		<li><a href="https://musics.awwkwards.com/p/prices-usages.html" class="footerlinks"> Prices / Usages </a></li> -->
+		<li><a href="https://help.greenish.xyz/privacy-policy" class="footerlinks"> Privacy Policy </a></li>	
+		<li><a href="https://help.greenish.xyz/refund-policy" class="footerlinks"> Return & Refund Policy</a></li>
+		<!-- <li><a href="https://musics.awwkwards.com/p/terms-and-conditions.html" class="footerlinks"> Terms And Conditions</a></li> -->
+		<li><a href="https://help.greenish.xyz/help-faq" class="footerlinks"> Help And Faq</a></li>
+<!-- 		<li><a href="https://musics.awwkwards.com/p/dmca.html" class="footerlinks"> DMCA</a></li> -->
+		<li><a href="https://help.greenish.xyz/contact" class="footerlinks"> Contact </a></li>
+
+				</ul>
+				<!-- Menu Fixed Close Button -->
+				<div class="x-filter">
+					<span></span>
+					<span></span>
+				</div>
+			</nav>
+		</div><!-- end menu-fixed-container -->
+		<!-- =============== STAR LOGO ================ -->
+		<div class="logo-container-top">
+			<a href="https://www.greenish.xyz/"><img src="assets/img/logo/whiteLogo.png" alt="Greenish"></a>
+		</div><!-- end logo-container-top -->
+		<!-- =============== END LOGO ================ -->
+	</div><!-- end topHeader -->
+	<!-- =============== END TOP HEADER ================ -->
+
+	<!-- =============== START BREADCRUMB ================ -->
+	<section class="no-mb">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="breadcrumb-fullscreen-parent phone-menu-bg">
+					<div class="breadcrumb breadcrumb-fullscreen alignleft small-description overlay almost-black-overlay" style="background-image: url('assets/img/starHomePage/star.jpg');" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0">
+						<div id="home" style="position: absolute;left: 0;top: 0;">
+							<div class="intro-header">
+								<div class="js-height-full star" style="height: 955px;">
+									<div class="star-pattern-1 js-height-full" style="height: 994px;"></div>
+									<div class="col-sm-12"> 
+										<div class="starTitle">
+											
+											<div class="grid__item">
+						                		<h1>
+								                	<a class="link link-yaku" href="#">
+														<span>G</span><span>R</span><span>R</span><span>E</span><span>N</span><span>I</span><span>S</span><span>H</span>		
+													</a>
+										        </h1>
+						                	</div>
+											<h4>Buy Royalty Free Music</h4>
+										</div>
+										<canvas class="cover" width="1920" height="955"></canvas>
+									</div>
+								</div>
+							</div>
+	   					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- =============== END BREADCRUMB ================ -->
+	
+	<!-- =============== START ALBUM SINGLE ================ -->
+	<section class="albumSingle padding background-properties" style="background-image:url(assets/img/albums/single33.jpg);">
+		<div class="container">
+			<div class="sectionTitle paddingBottom">
+				<span class="heading-t3"></span>
+				<h2><a href="https://www.greenish.xyz/">Browse Royalty Free Music Tracks For Creative Projects</a></h2>
+				<span class="heading-b3"></span>
+			</div><!-- end sectionTtile -->
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="jp-playlist">
+						<div class="about-list clearfix">
+							<span class="about-name">NAME</span>
+							<span class="about-length">LENGTH</span>
+						</div>
+
+
+
+
+
+
+
+
+
+
+  	<div class="trak-item" data-audio="https://help.greenish.xyz/music/ElectricStorm.mp3">
+		<audio preload="metadata" src="https://help.greenish.xyz/music/ElectricStorm.mp3" title="Electric Storm"></audio>
+		<div class="play-pause-button">
+			<div class="center-y-table">
+				<i class="fa fa-play"></i>
+			</div>
+
+		</div>
+		<div class="name-artist">
+			<div class="center-y-table">
+				<h2>
+					Electric Storm
+				</h2>
+			</div>
+		</div>
+
+		<a href=""><button class="buynow">$10 - Buy Now</button></a>
+
+		<time class="trak-duration">
+			00:00
+		</time>
+	</div>
+
+
+
+
+
+
+  	<div class="trak-item" data-audio="https://help.greenish.xyz/music/Generation.mp3">
+		<audio preload="metadata" src="https://help.greenish.xyz/music/Generation.mp3" title="Generation"></audio>
+		<div class="play-pause-button">
+			<div class="center-y-table">
+				<i class="fa fa-play"></i>
+			</div>
+
+		</div>
+		<div class="name-artist">
+			<div class="center-y-table">
+				<h2>
+					Generation
+				</h2>
+			</div>
+		</div>
+
+		<a href="#"><button class="buynow">$10 - Buy Now</button></a>
+
+		<time class="trak-duration">
+			00:00
+		</time>
+	</div>
+
+
+
+
+  	<div class="trak-item" data-audio="https://help.greenish.xyz/music/DarkCinematicPiano.mp3">
+		<audio preload="metadata" src="https://help.greenish.xyz/music/DarkCinematicPiano.mp3" title="Dark Cinematic Piano"></audio>
+		<div class="play-pause-button">
+			<div class="center-y-table">
+				<i class="fa fa-play"></i>
+			</div>
+
+		</div>
+		<div class="name-artist">
+			<div class="center-y-table">
+				<h2>
+					Dark Cinematic Piano
+				</h2>
+			</div>
+		</div>
+
+		<a href="#"><button class="buynow">$15 - Buy Now</button></a>
+
+		<time class="trak-duration">
+			00:00
+		</time>
+	</div>
+
+
+
+
+  	<div class="trak-item" data-audio="https://help.greenish.xyz/music/DigDeep.mp3">
+		<audio preload="metadata" src="https://help.greenish.xyz/music/DigDeep.mp3" title="Dig Deep"></audio>
+		<div class="play-pause-button">
+			<div class="center-y-table">
+				<i class="fa fa-play"></i>
+			</div>
+
+		</div>
+		<div class="name-artist">
+			<div class="center-y-table">
+				<h2>
+					Dig Deep
+				</h2>
+			</div>
+		</div>
+
+		<a href="#"><button class="buynow">$20 - Buy Now</button></a>
+
+		<time class="trak-duration">
+			00:00
+		</time>
+	</div>
+
+
+
+  	<div class="trak-item" data-audio="https://help.greenish.xyz/music/MakeAWish.mp3">
+		<audio preload="metadata" src="https://help.greenish.xyz/music/MakeAWish.mp3" title="Make A Wish"></audio>
+		<div class="play-pause-button">
+			<div class="center-y-table">
+				<i class="fa fa-play"></i>
+			</div>
+
+		</div>
+		<div class="name-artist">
+			<div class="center-y-table">
+				<h2>
+					Make A Wish
+				</h2>
+			</div>
+		</div>
+
+		<a href="#"><button class="buynow">$10 - Buy Now</button></a>
+
+		<time class="trak-duration">
+			00:00
+		</time>
+	</div>
+
+
+
+
+
+  	<div class="trak-item" data-audio="https://help.greenish.xyz/music/Evidence.mp3">
+		<audio preload="metadata" src="https://help.greenish.xyz/music/Evidence.mp3" title="Evidence"></audio>
+		<div class="play-pause-button">
+			<div class="center-y-table">
+				<i class="fa fa-play"></i>
+			</div>
+
+		</div>
+		<div class="name-artist">
+			<div class="center-y-table">
+				<h2>
+					Evidence
+				</h2>
+			</div>
+		</div>
+
+		<a href=""><button class="buynow">$15 - Buy Now</button></a>
+
+		<time class="trak-duration">
+			00:00
+		</time>
+	</div>
+
+
+
+
+  	<div class="trak-item" data-audio="https://help.greenish.xyz/music/Fireball.mp3">
+		<audio preload="metadata" src="https://help.greenish.xyz/music/Fireball.mp3" title="Fireball"></audio>
+		<div class="play-pause-button">
+			<div class="center-y-table">
+				<i class="fa fa-play"></i>
+			</div>
+
+		</div>
+		<div class="name-artist">
+			<div class="center-y-table">
+				<h2>
+					Fireball
+				</h2>
+			</div>
+		</div>
+
+		<a href="#"><button class="buynow">$10 - Buy Now</button></a>
+
+		<time class="trak-duration">
+			00:00
+		</time>
+	</div>
+
+
+
+
+
+  	<div class="trak-item" data-audio="https://help.greenish.xyz/music/Galaxy.mp3">
+		<audio preload="metadata" src="https://help.greenish.xyz/music/Galaxy.mp3" title="Galaxy"></audio>
+		<div class="play-pause-button">
+			<div class="center-y-table">
+				<i class="fa fa-play"></i>
+			</div>
+
+		</div>
+		<div class="name-artist">
+			<div class="center-y-table">
+				<h2>
+					Galaxy
+				</h2>
+			</div>
+		</div>
+
+		<a href="#"><button class="buynow">$20 - Buy Now</button></a>
+
+		<time class="trak-duration">
+			00:00
+		</time>
+	</div>
+
+
+
+  	<div class="trak-item" data-audio="https://help.greenish.xyz/music/OneMoreChance.mp3">
+		<audio preload="metadata" src="https://help.greenish.xyz/music/OneMoreChance.mp3" title="One More Chance"></audio>
+		<div class="play-pause-button">
+			<div class="center-y-table">
+				<i class="fa fa-play"></i>
+			</div>
+
+		</div>
+		<div class="name-artist">
+			<div class="center-y-table">
+				<h2>
+					One More Chance
+				</h2>
+			</div>
+		</div>
+
+		<a href="#"><button class="buynow">$15 - Buy Now</button></a>
+
+		<time class="trak-duration">
+			00:00
+		</time>
+	</div>
+
+
+
+  	<div class="trak-item" data-audio="https://help.greenish.xyz/music/TenseInvestigation.mp3">
+		<audio preload="metadata" src="https://help.greenish.xyz/music/TenseInvestigation.mp3" title="Tense Investigation"></audio>
+		<div class="play-pause-button">
+			<div class="center-y-table">
+				<i class="fa fa-play"></i>
+			</div>
+
+		</div>
+		<div class="name-artist">
+			<div class="center-y-table">
+				<h2>
+					Tense Investigation
+				</h2>
+			</div>
+		</div>
+
+		<a href="#"><button class="buynow">$10 - Buy Now</button></a>
+
+		<time class="trak-duration">
+			00:00
+		</time>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+					</div>
+				</div><!-- end-col-sm-8 -->
+				
+			</div><!-- end row -->
+
+
+
+		</div><!-- end container -->
+
+	</section>
+	<!-- =============== END ALBUM SINGLE ================ -->
+
+
+
+
+
+	<!-- =============== START GALLERY SECTION ================ -->
+	<section style="padding-bottom:0; padding-top:0;">
+
+		<div class="gallerySection">
+			<div class="container-fluid" style="padding:0;">
+				<div class="col-sm-12">
+					<!-- Content Container -->
+					<div class="content-container clearfix">
+						<!-- Single Album Container -->
+						<div class="single-photo-album-container">
+							<div class="row">
+								<!-- Single Album Article -->
+								<article class="col-sm-12 col-md-6 col-xs-12">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<!-- Single Album Image -->
+											<div class="hovereffect">
+												<img class="img-responsive" src="assets/img/content/g1.jpg" alt="">
+												<div class="overlay">
+												   <a class="info lightbox" href="assets/img/bigGallery/1.jpg"></a>
+												</div>
+											</div>
+										</figcaption>
+										<!-- Single Album View Button -->
+										
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/content/g2.jpg" alt="">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/bigGallery/2.jpg"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/content/g3.jpg" alt="">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/bigGallery/3.jpg"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/content/g4.jpg" alt="">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/bigGallery/4.jpg"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/content/g5.jpg" alt="">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/bigGallery/5.jpg"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-12 col-md-6 col-xs-12">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/content/g6.jpg" alt="">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/bigGallery/6.jpg"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- end container -->
+		</div>
+	</section>
+	<!-- =============== END GALLERY SECTION ================ -->
+
+
+	<!-- =============== START FOOTER ================ -->
+	<section style="background-color:#000;">
+		<div class="footer footerPadding">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="copyFooter">
+							<a href="https://www.greenish.xyz/"> &copy; 2017 Greenish. All Rights Reserved</a>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<nav class="social-icons">
+							<ul class="clearfix">
+								<!-- <li><a href="#" class="icon-button shopIcon"><i class="fa fa-twitter"></i><span></span></a></li> -->
+								<!-- <li><a href="#" class="icon-button shopIcon"><i class="fa fa-facebook"></i><span></span></a></li>
+								<li><a href="#" class="icon-button shopIcon"><i class="fa fa-apple"></i><span></span></a></li>
+								<li><a href="#" class="icon-button shopIcon"><i class="fa fa-lastfm"></i><span></span></a></li>
+								<li><a href="#" class="icon-button shopIcon"><i class="fa fa-soundcloud"></i><span></span></a></li>
+								<li><a href="#" class="icon-button shopIcon"><i class="fa fa-youtube-play"></i><span></span></a></li>
+								<li><a href="#" class="icon-button shopIcon"><i class="fa fa-vimeo"></i><span></span></a></li> -->  
+
+                    <a href="https://help.greenish.xyz/privacy-policy" class="footerlinks"> Privacy Policy </a>
+					<a href="https://help.greenish.xyz/refund-policy" class="footerlinks"> Return & Refund Policy</a>
+					<a href="https://help.greenish.xyz/contact" class="footerlinks"> Contact </a>
+					
+								
+							</ul>
+						</nav>
+					</div>
+
+
+					<div class="footer-connect">
+						<ul class="footer-connect-links">
+							<li class="footer-link-payments"><span class="footer-payment-methods"></span>
+							</li>
+						</ul>
+					</div>
+
+					
+					<div class="col-sm-12">
+						<div class="goTop back-to-top" id="back-to-top">
+							<i class="fa fa-angle-up"></i>
+							<a href="#">Go Top</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- =============== END FOOTER ================ -->
+
+	<!-- ================================================== -->
+	<!-- =============== START JQUERY SCRIPTS ================ -->
+	<!-- ================================================== -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/jplayer/jplayer/jquery.jplayer.js"></script>
+	<script src="assets/js/jPlayer.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/main.js"></script>
+	<!--[if lte IE 9 ]>
+		<script src="assets/js/placeholder.js"></script>
+		<script>
+			jQuery(function() {
+				jQuery('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+	<!-- ================================================== -->
+	<!-- =============== END JQUERY SCRIPTS ================ -->
+	<!-- ================================================== -->
+</body>
 </html>

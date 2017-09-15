@@ -1,0 +1,117 @@
+.form-control , input[type=text] , textarea , .post-password-form input[type=password] , .cart-collaterals .input-text , .create-account .input-text , .login .input-text {
+	margin-bottom: 2rem;
+	display: block;
+	width: 100%;
+	line-height: 1.5rem;
+	padding: 1rem 1.5rem;
+	font-size: 1.4rem;
+	color: #8e8e8e;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	background-color: #ffffff;
+	background-image: none;
+	border: 2px solid #f5f5f5;
+	border-radius: @input-border-radius;
+	box-shadow: none;
+	.transition(~"border-color ease-in-out 0.3s, box-shadow ease-in-out .15s");
+
+	&:hover , &:active , &:focus {
+		border-color: @theme-color-base;
+		box-shadow: none;
+	}
+}
+
+.btn, input[type=submit], button[type=submit] {
+	display: inline-block;
+	outline: none;
+	background: transparent;
+	margin-bottom: 0;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	cursor: pointer;
+	z-index: 1;
+	.transition;
+	background-image: none;
+	border: 2px solid @theme-color-base;
+	white-space: nowrap;
+	padding: 1.3rem 2rem;
+	font-size: 1.4rem;
+	line-height: 1;
+	border-radius: 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	&:after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		height: 0;
+		left: 0;
+		background: #313537;
+		.transition;
+		z-index: -1;
+	}
+	&:hover {
+		text-decoration: none;
+		outline: none;
+		color: #fff;
+		border-color: @theme-color-base;
+		&:after {
+			background: @theme-color-base;
+			height: 100%;
+		}
+	}
+}
+
+.alert {
+	.icon-alert {
+		float: left;
+		margin-right: 15px;
+	}
+}
+
+table {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: @line-height-computed;
+	// Cells
+	> thead,
+	> tbody,
+	> tfoot {
+		> tr {
+			> th,
+			> td {
+				padding: @table-cell-padding;
+				line-height: @line-height-base;
+				vertical-align: top;
+				border-top: 1px solid @table-border-color;
+			}
+		}
+	}
+	// Bottom align for column headings
+	> thead > tr > th {
+		vertical-align: bottom;
+		border-bottom: 2px solid @table-border-color;
+	}
+	// Remove top border from thead by default
+	> caption + thead,
+	> colgroup + thead,
+	> thead:first-child {
+		> tr:first-child {
+			> th,
+			> td {
+				border-top: 0;
+			}
+		}
+	}
+	// Account for multiple tbody instances
+	> tbody + tbody {
+		border-top: 2px solid @table-border-color;
+	}
+}
